@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+
+<!-- C’est une déclaration spéciale qui indique au navigateur : Ce document est écrit en HTML. -->
+
+
+<html>         
+    
+<!--     La balise <html> est l’élément racine de toute page HTML. -->
+
+<head>
+    <!-- La balise <head> est une section de la page HTML qui contient des informations sur la page, mais ces informations ne s’affichent pas directement à l’écran. -->
+    <meta charset="utf-8">
+    
+    <!--Elle spécifie que ton fichier HTML utilise l'encodage UTF-8. Cet encodage permet d’afficher tous les caractères spéciaux, -->
+
+</head>
+
+
+<!--     La balise <head> est une section de la page HTML qui contient des informations sur la page, mais ces informations ne s’affichent pas directement à l’écran. -->
+
+<body> <!--    La balise <body> représente le contenu principal de la page HTML qui sera affiché dans le navigateur. -->
+
+    <h1>    
+        
+        
+        
+        
+          Exercice 0</h1>   <!--//  la balise <h1>, qui est pour les titres principaux. -->
+
+        <script type="text/javascript">         
+                // La balise <script> permet d'intégrer du code JavaScript dans une page HTML.
+
+            /* Section 1 */   // commentaire sera pas afficher pour indiquer la prmiére section en HTML.
+
+            const name = "Joe";                  // je déclarre une variable nommé name qui prend une valeur String "Joe".
+            const city = 'London';               // je déclarre une variable nommé city qui prend une valeur String 'London'.
+            let age = 32;                     // je déclarre une variable nommé age qui prend une valeur entier 32.
+            const isRed = true;                // je déclarre une variable nommé iSRed qui prend une valeur booleane true.
+            const isOld = age > 80;             // je déclarre une variable nommé iSOld  qui prend une valeur  booléenne (true ou false) selon si age est supérieur à 80.
+
+            const previousJobs = ['lawyer', 'developper', 'Professionnal climber'];  // je déclarre une variable nommé previousJobs qui prend un tableau de plusieurs valeurs de type string (chaînes de caractères).
+
+            function info(height, weight) {   //   Une fonction en JavaScript permet de grouper des instructions que tu peux réutiliser plusieurs fois dans ton code. Ici, la fonction info prend deux paramètres : height (taille) et weight (poids).
+                if (height > 180) {                 // a condition if (height > 180) vérifie si la variable height (taille) est supérieure à 180. Si c’est vrai, le code à l'intérieur de la condition sera exécuté.
+                    console.log('Vous êtes grand'); // La fonction console.log() affiche ce qui se trouve entre les parenthèses dans la console. 
+                }
+                if (weight < 0) {   // La condition if (weight < 0) vérifie si la variable weight (poids) est inférieure à 0. Si c'est vrai (c'est-à-dire si le poids est négatif), le code à l'intérieur de cette condition sera exécuté.
+                    console.log('oups, there is a problem'); //  affiche simplement le message "oups, there is a problem" dans la console de ton navigateur.
+                } else if (weight < 15) { // est une condition supplémentaire qui sera vérifiée si la première condition if n'est pas vraie. Si weight est inférieur à 15, cette condition sera exécutée. 
+                    console.log('Are you that slim ?')  // Le code console.log('Are you that slim ?') affiche le message "Are you that slim ?" dans la console.
+                } else {                     // Cela représente le dernier cas possible, quand aucune des conditions précédentes ne s'applique.
+                    console.log('Good !')  //  Le code console.log('Good !') va simplement afficher le message "Good !" dans la console. 
+                }
+            }
+
+            info(165, 45);  //  height = 165 : La taille est de 165 cm- weight = 45 : Le poids est de 45 kg.
+
+
+            const myHeight = 175;  // je déclarre une variable nommé myHeigt ( ma taille)  qui prend une valeur entier 175 .
+            const myWeight = 86;    // je déclarre une variable nommé myWeight ( mon poid)  qui prend une valeur entier 86.
+
+            info(myHeight, myWeight); // la fonction info en utilisant les variables myHeight (pour la taille) et myWeight (pour le poids). 
+
+            info(myHeight + 15, myWeight - 100); // Le programme traite ces nouvelles valeurs pour vérifier les conditions de poids valide et de taille.
+
+            function toUpper(variable) {    // La fonction toUpper(variable) que tu veux créer pourrait être utilisée pour convertit la chaîne en majuscules.
+                return variable.toUpperCase();  //  variable est une chaîne de caractères (string).Fait exactement ce qu'il faut pour convertir une chaîne de caractères (string) en majuscules. 
+            }
+
+            const upperName = toUpper(name);   // je déclarre une variable nommé upperName qui prend une valeur String   toUpper(name).
+
+            for (let i = 0; i < 3; i = i + 1) {  //  est un boucle for en JavaScript. Cette boucle permet d'exécuter un bloc de code un certain nombre de fois, en fonction des conditions que tu définis.
+                console.log(previousJobs[i]);   //  permet d'accéder à un élément spécifique du tableau en fonction de l'index i.
+            }
+            
+            var kelvins = prompt("Quelle est la température en Kelvins aujourd'hui ?");
+            var celsius = kelvins-273;
+             console.log( " la température en celsius est de" + celsius+ "°c.") ;//  la température en Kelvin est convertie en Celsius en soustrayant 273 pour 21 °c.
+           
+            var fahrenheits= celsius*(9/5)+32;
+            console.log( " la température en fahrenheits est de " + fahrenheits+ "°c"  )  ; // // Cette ligne convertit la température en Celsius en Fahrenheit en utilisant la formule : Fahrenheit = Celsius * (9/5) + 32.  
+            
+            fahrenheits= match.floor(celsius*(9/5)+32);  //// Utilise Math.floor() pour arrondir la température en Fahrenheit et stocke le résultat dans Fahrenheit.
+            console.log (match.floor(celsius*(9/5)+32));
+            console.log("La température en Fahrenheit arrondie est de " + fahrenheits + "°F.");
+           
+           
+           
+           
+           
+           
+             /* Section 2: */
+
+            // afficher la ville dans laquele Joe vit.
+
+            // afficher si Joe est roux ou pas.
+
+            /* Section 3 */
+
+            // console.log(myVariable);
+
+        </script>
+
+</body>
+
+</html>
